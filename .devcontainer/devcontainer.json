@@ -1,0 +1,11 @@
+{
+  "name": "PRT BI Dev",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+  },
+  "postCreateCommand": "pip install dbt-core dbt-postgres sqlfluff pgcli pandas",
+  "forwardPorts": [5432],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace"
+}
