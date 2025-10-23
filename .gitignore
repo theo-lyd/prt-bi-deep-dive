@@ -1,1 +1,11 @@
-
+# Python
+__pycache__/
+*.pyc
+# VSCode
+.vscode/
+# Devcontainer
+.devcontainer/
+# Data
+/data/
+# Power BI
+*.pbix
